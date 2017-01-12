@@ -1,18 +1,18 @@
-<view>
-    <view>
-        <text>
+<view class="detail">
+    <view class='title'>
+        <text class='word'>
             {{title}}
         </text>
     </view>
-    <view>
+    <view class='price'>
         <text>
             {{price}}
         </text>
     </view>
-    <view>
+    <view class='img'>
         <image src="{{src}}"></image>
     </view>
-    <view>
+    <view class='content'>
         {{content}}
     </view>
 </view>

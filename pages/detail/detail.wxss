@@ -1,0 +1,7 @@
+.detail{
+	padding: 10rpx;
+	line-height: 30rpx;
+}
+.detail text{
+	border: solid 1rpx red;
+}

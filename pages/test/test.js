@@ -42,6 +42,7 @@ var hotels = [
       id: 6
     }
   ]
+var timer = null;
 Page({
   data: {
     items: [
@@ -64,5 +65,52 @@ Page({
         hotelArray: hotels
       })
     }, 2000)
+  },
+  getInputData: function(e){
+
+    var me = this;
+    me.setData({
+      hotelArray: [{}, {}, {}, {}, {}, {}]
+    })
+    if(timer){
+      return 
+    }
+    timer = setTimeout(function(){
+      if(!e.detail.value.trim()){
+        me.setData({
+          hotelArray: hotels
+        })
+      }else{
+        me.setData({
+          hotelArray: [{
+            place: false,
+            title: 'USA宾馆',
+            price: '3661元起',
+            src: 'https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg',
+            id: 1
+          }]
+        });
+      }
+      timer = null;
+    }, 2000)
+
   }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

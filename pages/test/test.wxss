@@ -38,3 +38,17 @@
     padding-right: 10px;
     box-sizing: border-box;
 }
+.logo{
+    padding: 20rpx;
+    background-color: yellow;
+}
+.inputBox{
+    background-color: #fff;
+    margin: 20rpx;
+}
+.searchInput{
+    height: 70rpx;
+    font-size: 26rpx;
+    padding-left: 30rpx;
+    line-height: 70rpx;
+}

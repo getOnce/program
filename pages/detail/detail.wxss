@@ -2,6 +2,7 @@
 	padding: 10rpx;
 	line-height: 30rpx;
 }
-.detail text{
+.detail .content{
 	border: solid 1rpx red;
+	line-height: 60rpx;
 }

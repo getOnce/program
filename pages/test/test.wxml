@@ -1,4 +1,10 @@
 <import src="../tpl/tpl.wxml"/>
+<view class="logo">
+  <image src="https://mp.weixin.qq.com/debug/wxadoc/dev/image/cat/0.jpg"></image>
+  <view class="inputBox">
+    <input class="searchInput" bindinput="getInputData" placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+  </view>
+</view>
 <view class="list">
   <block wx:for="{{hotelArray}}" wx:key="id">
     <template is="item" data="{{...item}}"/>

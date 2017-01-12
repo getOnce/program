@@ -1,0 +1,6 @@
+<import src="../tpl/tpl.wxml"/>
+<view class="list">
+  <block wx:for="{{hotelArray}}" wx:key="id">
+    <template is="item" data="{{...item}}"/>
+  </block>
+</view>

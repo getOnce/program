@@ -1,0 +1,21 @@
+<template name="item">
+    <navigator  url='../detail/detail'>
+        <view class='hotel'>
+            <view class='inner {{id ? "" : "loading"}}'>
+                <view class='place'>
+                    <text>{{place}}</text>
+                </view>
+                <view class='picture'>
+                    <image style="background-color: #eeeeee; height: 120px;"  mode="aspectFill" src="{{src}}"></image>
+                </view>
+                <view class='title'>
+                    <text>{{title}}</text>
+                </view>
+                <view class='price'>
+                    <text class="fc-black" style="margin-right: 4px;">每晚</text>
+                    <text class="fc-yellow">{{price}}</text>
+                </view>
+            </view>
+        </view>
+    </navigator>    
+</template>

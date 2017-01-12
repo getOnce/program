@@ -1,0 +1,18 @@
+<view>
+    <view>
+        <text>
+            {{title}}
+        </text>
+    </view>
+    <view>
+        <text>
+            {{price}}
+        </text>
+    </view>
+    <view>
+        <image src="{{src}}"></image>
+    </view>
+    <view>
+        {{content}}
+    </view>
+</view>
